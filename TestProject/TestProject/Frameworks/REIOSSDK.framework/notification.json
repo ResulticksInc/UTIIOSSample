@@ -1,0 +1,112 @@
+[
+{
+  "notification": {
+    "title": "Test Push from Resulticks 0001",
+    "subtitle": "Test Push from Resulticks 0001",
+    "badge": "1",
+    "sound": "default",
+    "click_action": "AlertMaybeLater"
+  },
+  "data": {
+    "customParams": {
+      "screenId": "2",
+      "categoryId": "2149"
+    },
+    "attachment-url": "https://run.resulticks.com//SocialMediaPostPicture/Temp/741daf20-5f87-4595-b12b-1236165bb5f9.png",
+    "id": "0001",
+    "screenUrl": "Home",
+    "mobileFriendlyUrl": "https://thegoldenspoon.com.vn/?did=cust_0f5716ce_a0b3_4789_83c7_4dc54babca67&bid=w&cid=50c52f32-b88a-415c-af2f-06d80a29e66d&rid=TFMV&sid=bbe6dc1d-ac06-4592-a629-82b80f417a62&chl=sm&utm_source=RE&utm_medium=comm&utm_campaign=Uk7",
+    "duration": "1 Minute(s)"
+  },
+  "mutable_content": true,
+  "to": "eMLucEjQg9E:APA91bGmOoX1LHeDIUviAKvfLQHWcy60-vzdPm4Bbs13QuDZFD5o4cKbjgpfoQPhhR8C9JQlmVqkYa6e3WPoOnygsNs5EbGMeMym2KNi9nv6oYrr3WbShqfj7di71vaht1GbAZdHkaro"
+},
+{
+  "notification": {
+    "title": "Test Push from Resulticks 0002",
+    "subtitle": "Test Push from Resulticks 0002",
+    "badge": "1",
+    "sound": "default",
+    "click_action": "AlertMaybeLater"
+  },
+  "data": {
+    "customParams": {
+      "screenId": "2",
+      "categoryId": "2149"
+    },
+    "attachment-url": "https://run.resulticks.com//SocialMediaPostPicture/Temp/741daf20-5f87-4595-b12b-1236165bb5f9.png",
+    "id": "0002",
+    "screenUrl": "Home",
+    "mobileFriendlyUrl": "https://thegoldenspoon.com.vn/?did=cust_0f5716ce_a0b3_4789_83c7_4dc54babca67&bid=w&cid=50c52f32-b88a-415c-af2f-06d80a29e66d&rid=TFMV&sid=bbe6dc1d-ac06-4592-a629-82b80f417a62&chl=sm&utm_source=RE&utm_medium=comm&utm_campaign=Uk7",
+    "duration": "1 Minute(s)"
+  },
+  "mutable_content": true,
+  "to": "eMLucEjQg9E:APA91bGmOoX1LHeDIUviAKvfLQHWcy60-vzdPm4Bbs13QuDZFD5o4cKbjgpfoQPhhR8C9JQlmVqkYa6e3WPoOnygsNs5EbGMeMym2KNi9nv6oYrr3WbShqfj7di71vaht1GbAZdHkaro"
+},
+{
+  "notification": {
+    "title": "Test Push from Resulticks 0003",
+    "subtitle": "Test Push from Resulticks 0003",
+    "badge": "1",
+    "sound": "default",
+    "click_action": "AlertMaybeLater"
+  },
+  "data": {
+    "customParams": {
+      "screenId": "2",
+      "categoryId": "2149"
+    },
+    "attachment-url": "https://run.resulticks.com//SocialMediaPostPicture/Temp/741daf20-5f87-4595-b12b-1236165bb5f9.png",
+    "id": "0003",
+    "screenUrl": "Home",
+    "mobileFriendlyUrl": "https://thegoldenspoon.com.vn/?did=cust_0f5716ce_a0b3_4789_83c7_4dc54babca67&bid=w&cid=50c52f32-b88a-415c-af2f-06d80a29e66d&rid=TFMV&sid=bbe6dc1d-ac06-4592-a629-82b80f417a62&chl=sm&utm_source=RE&utm_medium=comm&utm_campaign=Uk7",
+    "duration": "1 Minute(s)"
+  },
+  "mutable_content": true,
+  "to": "eMLucEjQg9E:APA91bGmOoX1LHeDIUviAKvfLQHWcy60-vzdPm4Bbs13QuDZFD5o4cKbjgpfoQPhhR8C9JQlmVqkYa6e3WPoOnygsNs5EbGMeMym2KNi9nv6oYrr3WbShqfj7di71vaht1GbAZdHkaro"
+},
+{
+  "notification": {
+    "title": "Test Push from Resulticks 0004",
+    "subtitle": "Test Push from Resulticks 0004",
+    "badge": "1",
+    "sound": "default",
+    "click_action": "AlertMaybeLater"
+  },
+  "data": {
+    "customParams": {
+      "screenId": "2",
+      "categoryId": "2149"
+    },
+    "attachment-url": "https://run.resulticks.com//SocialMediaPostPicture/Temp/741daf20-5f87-4595-b12b-1236165bb5f9.png",
+    "id": "0004",
+    "screenUrl": "Home",
+    "mobileFriendlyUrl": "https://thegoldenspoon.com.vn/?did=cust_0f5716ce_a0b3_4789_83c7_4dc54babca67&bid=w&cid=50c52f32-b88a-415c-af2f-06d80a29e66d&rid=TFMV&sid=bbe6dc1d-ac06-4592-a629-82b80f417a62&chl=sm&utm_source=RE&utm_medium=comm&utm_campaign=Uk7",
+    "duration": "1 Minute(s)"
+  },
+  "mutable_content": true,
+  "to": "eMLucEjQg9E:APA91bGmOoX1LHeDIUviAKvfLQHWcy60-vzdPm4Bbs13QuDZFD5o4cKbjgpfoQPhhR8C9JQlmVqkYa6e3WPoOnygsNs5EbGMeMym2KNi9nv6oYrr3WbShqfj7di71vaht1GbAZdHkaro"
+},
+{
+  "notification": {
+    "title": "Test Push from Resulticks 0005",
+    "subtitle": "Test Push from Resulticks 0005",
+    "badge": "1",
+    "sound": "default",
+    "click_action": "AlertMaybeLater"
+  },
+  "data": {
+    "customParams": {
+      "screenId": "2",
+      "categoryId": "2149"
+    },
+    "attachment-url": "https://run.resulticks.com//SocialMediaPostPicture/Temp/741daf20-5f87-4595-b12b-1236165bb5f9.png",
+    "id": "0005",
+    "screenUrl": "Home",
+    "mobileFriendlyUrl": "https://thegoldenspoon.com.vn/?did=cust_0f5716ce_a0b3_4789_83c7_4dc54babca67&bid=w&cid=50c52f32-b88a-415c-af2f-06d80a29e66d&rid=TFMV&sid=bbe6dc1d-ac06-4592-a629-82b80f417a62&chl=sm&utm_source=RE&utm_medium=comm&utm_campaign=Uk7",
+    "duration": "1 Minute(s)"
+  },
+  "mutable_content": true,
+  "to": "eMLucEjQg9E:APA91bGmOoX1LHeDIUviAKvfLQHWcy60-vzdPm4Bbs13QuDZFD5o4cKbjgpfoQPhhR8C9JQlmVqkYa6e3WPoOnygsNs5EbGMeMym2KNi9nv6oYrr3WbShqfj7di71vaht1GbAZdHkaro"
+}
+]
