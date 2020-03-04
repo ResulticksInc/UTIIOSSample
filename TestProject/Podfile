@@ -9,5 +9,7 @@ target 'TestProject' do
   pod 'Firebase/Messaging'
 
   # Pods for TestProject
+  
+  pod 'SDWebImage'
 
 end

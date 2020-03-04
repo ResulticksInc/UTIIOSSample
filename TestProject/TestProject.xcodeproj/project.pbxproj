@@ -25,10 +25,14 @@
 		276B597B24069C54001D3ABD /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 276B59562405A638001D3ABD /* Starscream.framework */; };
 		276B597C24069C54001D3ABD /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 276B59562405A638001D3ABD /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27F515E5240CDA0E00DFFB9F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27F515E4240CDA0E00DFFB9F /* GoogleService-Info.plist */; };
-		27F515E8240CE15600DFFB9F /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F515E6240CE14F00DFFB9F /* REIOSSDK.framework */; };
-		27F515E9240CE15600DFFB9F /* REIOSSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27F515E6240CE14F00DFFB9F /* REIOSSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		27F51608240CEE7E00DFFB9F /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F51607240CEE7E00DFFB9F /* NotificationService.swift */; };
 		27F5160C240CEE7E00DFFB9F /* TestProjectExt.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 27F51605240CEE7E00DFFB9F /* TestProjectExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		27F516C1240F997100DFFB9F /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F516C0240F997100DFFB9F /* NotificationViewController.swift */; };
+		27F516C3240F998C00DFFB9F /* Screen1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F516C2240F998C00DFFB9F /* Screen1ViewController.swift */; };
+		27F516C5240F99A700DFFB9F /* Screen2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F516C4240F99A700DFFB9F /* Screen2ViewController.swift */; };
+		27F516C9240FA7AD00DFFB9F /* bellNew.png in Resources */ = {isa = PBXBuildFile; fileRef = 27F516C8240FA7AD00DFFB9F /* bellNew.png */; };
+		27F5171C241041B000DFFB9F /* REIOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F5171A241041AA00DFFB9F /* REIOSSDK.framework */; };
+		27F5171D241041B000DFFB9F /* REIOSSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 27F5171A241041AA00DFFB9F /* REIOSSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6B08B53231E162B1F6C5AAA9 /* Pods_TestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A9A1E50F23FD5F2E173808 /* Pods_TestProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +55,7 @@
 			files = (
 				276B597224069C18001D3ABD /* Alamofire.framework in Embed Frameworks */,
 				276B597C24069C54001D3ABD /* Starscream.framework in Embed Frameworks */,
-				27F515E9240CE15600DFFB9F /* REIOSSDK.framework in Embed Frameworks */,
+				27F5171D241041B000DFFB9F /* REIOSSDK.framework in Embed Frameworks */,
 				276B597624069C1E001D3ABD /* IDZSwiftCommonCrypto.framework in Embed Frameworks */,
 				276B597A24069C52001D3ABD /* SocketIO.framework in Embed Frameworks */,
 				276B597424069C1A001D3ABD /* CryptoSwift.framework in Embed Frameworks */,
@@ -89,12 +93,16 @@
 		276B59682405B1B9001D3ABD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		276B596A2405B3C2001D3ABD /* TestProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestProject.entitlements; sourceTree = "<group>"; };
 		27F515E4240CDA0E00DFFB9F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		27F515E6240CE14F00DFFB9F /* REIOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = REIOSSDK.framework; sourceTree = "<group>"; };
 		27F515EF240CEDE800DFFB9F /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		27F515F1240CEDE800DFFB9F /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
 		27F51605240CEE7E00DFFB9F /* TestProjectExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TestProjectExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F51607240CEE7E00DFFB9F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		27F51609240CEE7E00DFFB9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27F516C0240F997100DFFB9F /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		27F516C2240F998C00DFFB9F /* Screen1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1ViewController.swift; sourceTree = "<group>"; };
+		27F516C4240F99A700DFFB9F /* Screen2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2ViewController.swift; sourceTree = "<group>"; };
+		27F516C8240FA7AD00DFFB9F /* bellNew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bellNew.png; sourceTree = "<group>"; };
+		27F5171A241041AA00DFFB9F /* REIOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = REIOSSDK.framework; sourceTree = "<group>"; };
 		5D1EDE4F5E8E3506C59FFD5A /* Pods-TestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.release.xcconfig"; path = "Target Support Files/Pods-TestProject/Pods-TestProject.release.xcconfig"; sourceTree = "<group>"; };
 		6401C1BB8F303592F1915261 /* Pods-TestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestProject.debug.xcconfig"; path = "Target Support Files/Pods-TestProject/Pods-TestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		71A9A1E50F23FD5F2E173808 /* Pods_TestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,7 +117,7 @@
 				276B597B24069C54001D3ABD /* Starscream.framework in Frameworks */,
 				276B597924069C52001D3ABD /* SocketIO.framework in Frameworks */,
 				276B597324069C1A001D3ABD /* CryptoSwift.framework in Frameworks */,
-				27F515E8240CE15600DFFB9F /* REIOSSDK.framework in Frameworks */,
+				27F5171C241041B000DFFB9F /* REIOSSDK.framework in Frameworks */,
 				276B597524069C1E001D3ABD /* IDZSwiftCommonCrypto.framework in Frameworks */,
 				6B08B53231E162B1F6C5AAA9 /* Pods_TestProject.framework in Frameworks */,
 			);
@@ -149,6 +157,7 @@
 		276B59352405A522001D3ABD /* TestProject */ = {
 			isa = PBXGroup;
 			children = (
+				27F516C8240FA7AD00DFFB9F /* bellNew.png */,
 				276B596A2405B3C2001D3ABD /* TestProject.entitlements */,
 				276B594C2405A5FE001D3ABD /* Frameworks */,
 				276B59362405A522001D3ABD /* AppDelegate.swift */,
@@ -159,6 +168,9 @@
 				276B59412405A525001D3ABD /* LaunchScreen.storyboard */,
 				276B59442405A525001D3ABD /* Info.plist */,
 				276B59682405B1B9001D3ABD /* HomeViewController.swift */,
+				27F516C0240F997100DFFB9F /* NotificationViewController.swift */,
+				27F516C2240F998C00DFFB9F /* Screen1ViewController.swift */,
+				27F516C4240F99A700DFFB9F /* Screen2ViewController.swift */,
 			);
 			path = TestProject;
 			sourceTree = "<group>";
@@ -166,7 +178,7 @@
 		276B594C2405A5FE001D3ABD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27F515E6240CE14F00DFFB9F /* REIOSSDK.framework */,
+				27F5171A241041AA00DFFB9F /* REIOSSDK.framework */,
 				276B59552405A638001D3ABD /* SocketIO.framework */,
 				276B59562405A638001D3ABD /* Starscream.framework */,
 				276B59502405A62D001D3ABD /* Alamofire.framework */,
@@ -292,6 +304,7 @@
 				27F515E5240CDA0E00DFFB9F /* GoogleService-Info.plist in Resources */,
 				276B59402405A525001D3ABD /* Assets.xcassets in Resources */,
 				276B593E2405A522001D3ABD /* Main.storyboard in Resources */,
+				27F516C9240FA7AD00DFFB9F /* bellNew.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27F516C5240F99A700DFFB9F /* Screen2ViewController.swift in Sources */,
+				27F516C1240F997100DFFB9F /* NotificationViewController.swift in Sources */,
 				276B59692405B1B9001D3ABD /* HomeViewController.swift in Sources */,
 				276B593B2405A522001D3ABD /* ViewController.swift in Sources */,
 				276B59372405A522001D3ABD /* AppDelegate.swift in Sources */,
+				27F516C3240F998C00DFFB9F /* Screen1ViewController.swift in Sources */,
 				276B59672405AF5F001D3ABD /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

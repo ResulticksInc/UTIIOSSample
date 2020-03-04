@@ -13,71 +13,48 @@ import REIOSSDK
 
 extension UIViewController:UNUserNotificationCenterDelegate {
     public func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        
+        // Passing foreground notification data to REIOSSDK
         REiosHandler.getNotification()?.setForegroundNotification(notification: notification, completionHandler: {
             handler in
+            REiosHandler.unreadNotificationCount(onSuccess: { (count) in
+                DispatchQueue.main.async {
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "unread"), object: count)
+                }
+                
+               
+            }) { (count) in
+                DispatchQueue.main.async {
+                    NotificationCenter.default.post(name: NSNotification.Name(rawValue: "unread"), object: count)
+                }
+                
+            }
             completionHandler(handler)
+            
         })
+        
     }
     
     public func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         
+        print("Notification action response \(response)")
+        
+        // Passing notification response data to REIOSSDK
+        REiosHandler.getNotification()?.setNotificationAction(response: response)
+        
         let data = response.notification.request.content.userInfo
         
-        if
-            let _value = data["screenUrl"] as? String,
-            _value != "" {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(withIdentifier: data["screenUrl"] as! String)
+        // Perform this to navigate screen only on click of Default notification action
+        // Please ensure that you navigate screen based on the custom params
+        // Here we are using screenUrl to navigate screen
+       // if response.actionIdentifier == UNNotificationDefaultActionIdentifier {
             
-            if let topVc: UIViewController = UIApplication.topViewController1() {
-                
-                if UIApplication.shared.applicationState == .inactive {
-                    //UIApplication.shared.keyWindow?.addSubview(loaderView())
-                    let delayInSeconds = 5.0
-                    DispatchQueue.main.asyncAfter(deadline: .now() + delayInSeconds) {
-                        DispatchQueue.main.async {
-                            UIApplication.shared.keyWindow?.viewWithTag(1001)?.removeFromSuperview()
-                            
-                        }
-                        topVc.navigationController?.pushViewController(viewController, animated: false)
-                    }
-                }
+            if
+                let _value = data["screenUrl"] as? String,
+                _value != "" {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(withIdentifier: data["screenUrl"] as! String)
+                self.navigationController?.pushViewController(viewController, animated: false)
             }
-            return
-        }
-        
-        print(data)
-        
-        if
-            let _userInfo = data as? [String: Any],
-            let _data = _userInfo["data"] as? [String: Any],
-            let _mobileFriendlyUrl = _data["mobileFriendlyUrl"] as? String {
-            
-        } else if let _mobileFriendlyUrl = data["mobileFriendlyUrl"] as? String {
-            
-        }
-        
-        REiosHandler.getNotification()?.setNotificationAction(response: response)
+       // }
     }
-}
-
-extension UIApplication {
-    
-    class func topViewController1(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
-        
-        if let navigationController = controller as? UINavigationController {
-            return topViewController1(controller: navigationController.visibleViewController)
-        }
-        if
-            let tabController = controller as? UITabBarController,
-            let selected = tabController.selectedViewController {
-            return topViewController1(controller: selected)
-        }
-        if let presented = controller?.presentedViewController {
-            return topViewController1(controller: presented)
-        }
-        return controller
-    }
-    
 }

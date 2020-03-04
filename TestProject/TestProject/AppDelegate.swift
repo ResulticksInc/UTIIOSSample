@@ -35,7 +35,6 @@ var window: UIWindow?
     }
     
     private func initIntSdk() {
-        REiosHandler.printAny = true;
         REiosHandler.debug = true;
         FirebaseApp.configure();
         REiosHandler.initWithApi(apiKey: "e00f9d0b-8390-11e9-ab0f-06ab9bb94413", registerNotificationCategory: []);
@@ -87,5 +86,21 @@ extension AppDelegate {
         
         return true
     }
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        REiosHandler.unreadNotificationCount(onSuccess: { (count) in
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "unread"), object: count)
+            }
+            
+           
+        }) { (count) in
+            DispatchQueue.main.async {
+                NotificationCenter.default.post(name: NSNotification.Name(rawValue: "unread"), object: count)
+            }
+            
+        }
+    }
 }
+
+
 
