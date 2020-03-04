@@ -46,7 +46,7 @@ extension UIViewController:UNUserNotificationCenterDelegate {
         // Perform this to navigate screen only on click of Default notification action
         // Please ensure that you navigate screen based on the custom params
         // Here we are using screenUrl to navigate screen
-       // if response.actionIdentifier == UNNotificationDefaultActionIdentifier {
+       if response.actionIdentifier == UNNotificationDefaultActionIdentifier {
             
             if
                 let _value = data["screenUrl"] as? String,
@@ -55,6 +55,6 @@ extension UIViewController:UNUserNotificationCenterDelegate {
                 let viewController = storyboard.instantiateViewController(withIdentifier: data["screenUrl"] as! String)
                 self.navigationController?.pushViewController(viewController, animated: false)
             }
-       // }
+        }
     }
 }
