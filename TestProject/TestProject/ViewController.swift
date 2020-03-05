@@ -47,8 +47,7 @@ class ViewController: UIViewController {
     @IBAction func locationBtnClicked(sender:UIButton) {
         // Pass current location from location manager
         // For example we are sending static values
-       // REiosHandler.updateLocation(lat: "13.1234567", long: "87.123456")
-        REiosHandler.resulticksAPNSLocalNotification(title: "Welcome to Resulticks", body: "Welcome to Resulticks subtitle")
+        REiosHandler.updateLocation(lat: "13.1234567", long: "87.123456")
     }
     @IBAction func customEventBtnClicked(sender:UIButton){
         REiosHandler.addEvent(eventName: "Purchased", data: ["productId": 44, "price": 999].description)
